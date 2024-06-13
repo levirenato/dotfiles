@@ -2,7 +2,7 @@
 set $mod Mod4
 
 # GAPS
-gaps inner 3px
+gaps inner 4px
 smart_gaps on
 
 # Font
@@ -17,7 +17,8 @@ font pango:Meslo LGM Nerd Font  10
 
 exec setxkbmap  -layout us -variant intl
 
-
+# Sound
+exec --no-startup-id kmix
 # Start XDG autostart .desktop files using dex. 
 exec --no-startup-id dex --autostart --environment i3
 
