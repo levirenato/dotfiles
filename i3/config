@@ -221,3 +221,5 @@ assign [class="thunderbird"] "4 󰇮"
 
 # Config opened windows
 for_window [class="thunderbird" instance="Msgcompose"] floating enable
+
+for_window [class="Yad"] floating enable
