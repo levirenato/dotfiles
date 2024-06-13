@@ -199,6 +199,8 @@ bar {
 }
 
 # Borders
+new_window none
+new_window pixel 1
 hide_edge_borders both
 
 # END BAR
@@ -213,6 +215,8 @@ bindsym $mod+Shift+f exec --no-startup-id kitty -e ranger
 
 bindsym $mod+Shift+e exec thunderbird
 
+bindsym $mod+p exec scrot
+
 # Open in specifc workspace
 
 # assign <criteria> [→] [workspace] [number] <workspace>
@@ -223,3 +227,6 @@ assign [class="thunderbird"] "4 󰇮"
 for_window [class="thunderbird" instance="Msgcompose"] floating enable
 
 for_window [class="Yad"] floating enable
+
+
+
