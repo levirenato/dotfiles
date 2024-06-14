@@ -30,3 +30,7 @@
     * xdotool (for positioning of the popup)
 
 
+![image](https://github.com/levirenato/dotfiles/assets/84652664/be15aa6a-309a-4d96-873b-164e416b9c51)
+
+![image](https://github.com/levirenato/dotfiles/assets/84652664/325c576b-6c92-43dd-bcf4-1060f7c1d6ec)
+
