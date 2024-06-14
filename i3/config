@@ -189,7 +189,7 @@ bar {
 	separator_symbol "|"
 
 	colors {
-                background $bg-colorx
+                background $bg-color
                 separator #757575
                 #                  border             background         text
                 focused_workspace  $inactive-bg-color $inactive-bg-color $inactive-text-color
