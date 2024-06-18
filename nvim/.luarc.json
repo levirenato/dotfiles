@@ -1,0 +1,10 @@
+{
+    "diagnostics.disable": [
+        "undefined-doc-name"
+    ],
+    "diagnostics.globals": [
+        "name",
+        "priority",
+        "lazy"
+    ]
+}
