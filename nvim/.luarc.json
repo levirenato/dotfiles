@@ -5,6 +5,7 @@
     "diagnostics.globals": [
         "name",
         "priority",
-        "lazy"
+        "lazy",
+        "lsp"
     ]
 }

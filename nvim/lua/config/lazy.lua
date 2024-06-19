@@ -10,6 +10,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   spec = {
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+    { import = "lazyvim.plugins.extras.lang.typescript" },
     { import = "lazyvim.plugins.extras.lang.angular" },
     { import = "lazyvim.plugins.extras.lang.python" },
     { import = "plugins" },
@@ -36,5 +37,45 @@ require("lazy").setup({
         "zipPlugin",
       },
     },
+  },
+
+  -- HTML
+  {
+    "hrsh7th/nvim-cmp",
+    opts = {
+      sources = {
+        -- other sources
+        {
+          name = "html-css",
+          option = {
+            max_count = {},
+            enable_on = {
+              "html",
+            },
+            file_extensions = { "css", "sass", "less" },
+            style_sheets = {
+              "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css",
+              "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css",
+            },
+          },
+        },
+      },
+    },
+  },
+  {
+    "Jezda1337/nvim-html-css",
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+      "nvim-lua/plenary.nvim",
+    },
+    config = function()
+      require("html-css"):setup()
+    end,
+  },
+  {
+    "olrtg/nvim-emmet",
+    config = function()
+      vim.keymap.set({ "n", "v" }, "<leader>xe", require("nvim-emmet").wrap_with_abbreviation)
+    end,
   },
 })
