@@ -1,6 +1,9 @@
 {
     "diagnostics.disable": [
-        "undefined-doc-name"
+        "undefined-doc-name",
+        "assign-type-mismatch",
+        "duplicate-doc-field",
+        "duplicate-set-field"
     ],
     "diagnostics.globals": [
         "name",
