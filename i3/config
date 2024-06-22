@@ -7,7 +7,7 @@ smart_gaps on
 
 # Font
 
-font pango:Meslo LGM Nerd Font  10
+font pango:MesloLGM Nerd Font Mono 10
 #font pango:DejaVu Sans Mono 8
 
 # EXECUTE
@@ -60,7 +60,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run -nb black -fn "Meslo LGM Nerd Font" 
+bindsym $mod+d exec --no-startup-id dmenu_run -nb black -fn "MesloLGM Nerd Font Mono" 
 
 # change focus
 bindsym $mod+h focus left
@@ -185,7 +185,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 bar { 
         status_command i3blocks -c ~/.config/i3/i3blocks.conf 
 	position top
-	font pango:Meslo LGM Nerd Font  10
+	font pango:MesloLGM Nerd Font Mono 10
 	separator_symbol "|"
 
 	colors {
