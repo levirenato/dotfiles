@@ -209,7 +209,7 @@ hide_edge_borders both
 
 bindsym $mod+Shift+n exec firefox
 
-bindsym $mod+Shift+c exec code
+bindsym $mod+Shift+c exec --no-startup-id kitty -e tmux & nvim
 
 bindsym $mod+Shift+f exec --no-startup-id kitty -e ranger
 
